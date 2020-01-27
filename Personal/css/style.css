@@ -1,0 +1,60 @@
+/*Body*/
+
+body{
+  background: url('');
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+}
+
+.all-content{
+  z-index: 5;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*Wraps*/
+
+/*Widget Wrap*/
+#widget-wrap{
+  position: absolute;
+  height: 600px;
+  opacity: .7;
+  transition: 1s ease;
+}
+
+#widget-wrap:hover {
+  opacity: 1;
+}
+
+/*Search*/
+#search-wrap{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 5%;
+  width: 800px;
+  height: 40px;
+  margin: -83px auto 0 auto;
+  display: none;
+}
+
+/*Cat: Disabled*/
+.main {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 65%;
+  z-index: 50;
+}

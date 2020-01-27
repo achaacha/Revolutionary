@@ -1,0 +1,113 @@
+/* Clockwork */
+#cw{
+  height: 250px;
+  width: 400px;
+  border-radius: 3em;
+}
+#cw1{
+	margin: 0;
+  background: #036;
+	transition: 10s ease;
+  height: 100%;
+  width: 100%;
+  border-radius: 3em;
+}
+
+.cont {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+  border-radius: 3em;
+}
+
+.sky{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	z-index: 2;
+	background: linear-gradient(#036, #17b,#2cb);
+	transition: 10s ease;
+  border-radius: 3em;
+}
+.sky-dawn{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	z-index: 2;
+	background: linear-gradient(#78d, #a8d,#eeb);
+	opacity:0;
+	transition: 10s ease;
+  border-radius: 3em;
+}
+.sky-day{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	z-index: 2;
+	background: linear-gradient(#1bf,#6df,#bfe);
+	opacity:0;
+	transition: 10s ease;
+  border-radius: 3em;
+}
+.show{
+	opacity: 1;
+}
+
+.foreground{
+	position: relative;
+	z-index: 10;
+	fill: #036;
+  height: 255px;
+  top: -228px;
+  width: 400px;
+  border-radius: 3em;
+}
+.trees{
+	transition: 10s ease;
+  z-index: 10;
+  fill: #036;
+}
+.hills{
+	transition: 10s ease;
+  z-index: 10;
+}
+
+#clock{
+	width: 500px;
+  font: 70px "Wire One";
+	margin: auto;
+  padding-left: 55px;
+  padding-top: 45px;
+	display: block;
+	position: absolute;
+	z-index: 20;
+	color: #ee7;
+	text-align: center;
+	text-shadow: 0 0 2px #efd;
+	transition: 1s ease;
+  animation: clock 1ms alternate infinite;
+}
+
+@keyframes clock {
+    0% { color:#ee7; }
+    100% { color:#ee7; }
+}
+
+.app {
+  height: 350px;
+  width: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  background: #036;
+  transition: 10s ease;
+}

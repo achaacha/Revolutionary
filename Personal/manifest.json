@@ -1,0 +1,16 @@
+{
+   "author": "Acha",
+   "name": "A special HUD",
+   "manifest_version": 2,
+   "version": "1.0.0",
+   "description": "Personal HUD feature that guarantees privacy as well. No worrying about people collecting your data!",
+   "chrome_url_overrides": {
+      "newtab": "pages/newtab.html"
+   },
+   "permissions": [
+     "http://fonts.googleapis.com/",
+     "https://fonts.googleapis.com/"
+   ],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "default_locale": "en"
+}
