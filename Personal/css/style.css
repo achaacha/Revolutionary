@@ -1,7 +1,7 @@
 /*Body*/
 
 body{
-  background: url('');
+  background-color: #000;
   background-position: center center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -10,6 +10,8 @@ body{
   height: 100%;
   width: 100%;
   position:absolute;
+  top:0;
+  left:0;
 }
 
 .all-content{
@@ -20,25 +22,28 @@ body{
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 /*Wraps*/
 
-/*Widget Wrap*/
+
+
+/*Widget Wrap Disabled*/
 #widget-wrap{
   position: absolute;
   height: 600px;
   opacity: .7;
   transition: 1s ease;
+  display: none;
 }
 
 #widget-wrap:hover {
   opacity: 1;
 }
 
-/*Search*/
+/*Search Disabled */
 #search-wrap{
   position: absolute;
   top: 30%;
@@ -50,7 +55,7 @@ body{
   display: none;
 }
 
-/*Cat: Disabled*/
+/*Cat*/
 .main {
   height: 400px;
   width: 400px;
