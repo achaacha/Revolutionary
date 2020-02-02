@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import './animations.css';
+@import './glitch-lines.css';
+@import './glitch-flash.css';
+/*--------------------------------------
+| First Screen Functionality and Design |
+---------------------------------------*/
+
+/*----------------------------
+|        Body/Wallpaper       |
+-----------------------------*/
+
+
+body{
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
+  position:fixed;
+  background: #08080B;
+  top:0;
+  left:0;
+}
+
+#VideoContain, .all-content{
+  bottom: 0;
+  right: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: fixed;
+  overflow: hidden;
+}
+.all-content{
+  z-index: 5;
+  transition: opacity .5s ease-out;
+}
+#VideoContain{
+  opacity: 1;
+  animation: fadeinonload .8s ease-in-out;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  transition: filter cubic-bezier(0.25, 0.46, 0.45, 0.94) .3s;
+}
+
+
+/*----------------------------
+|        Search!              |
+-----------------------------*/
+
+#search-wrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(0,0,0,.8);
+}
+
+#searchbar {
+  position: absolute;
+  min-height: 255px;
+  min-width: 800px;
+  height: 30%;
+  width: 30%;
+  left: 30%;
+  top: 30%;
+}
+.searchTerm {
+  margin-top: 30px;
+  background: none;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #4a4e61;
+  font-size: 850%;
+  height: 35%;
+  outline: none;
+  border: none;
+}
+.searchTerm:focus {
+  color: #00B4CC;
+}
+.bigline{
+  height: 4px;
+  width: 0;
+  background-color: #00B4CC;
+  transition: all .5s ease-out;
+}
+#minitext{
+  color: #00B4CC;
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  transition: transform .7s ease-out;
+  transform: translate(0, 20%);
+}
+
+
+#search-header, #searchclose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 30px;
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+#search-header img, #searchclose img {
+  right: 0;
+  height: 100%;
+  left: 100%;
+  transition: all 1s ease-out;
+}
+
+
+/*-------------------------
+|       Slide Menu         |
+--------------------------*/
+.the-matrix {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+}
+
+/*The-Matrix was only placed here as it
+is directly associated with menu.
+Reference glitch css for functionality.*/
+
+.menu-wrap{
+  position: absolute;
+  height: 100vh;
+  width: 375px;
+  left: 0;
+  margin-left: -315px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  background: rgba(0,0,0,.8);
+  opacity: 1;
+  animation: menuslide .8s ease-in-out;
+}
+
+.menuicon {
+  position: absolute;
+  min-height: 100vh;
+  width: 375px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+}
+.menuicon img {
+  position: absolute;
+  filter: contrast(150%);
+  top: 50%;
+  right: 0;
+  animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+  cursor: pointer;
+  z-index: 12;
+}
+
+
+/*-------------------------
+|       Chrome Log In      |
+--------------------------*/
+#chromeinfo {
+  height: 400px;
+}
+#photo {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  left: 75px;
+}
+
+#photo img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+/*-------------------------
+|       Menu Buttons       |
+--------------------------*/
+
+#slide-menu{
+  position: fixed;
+  min-height: 100vh;
+  width: 320px;
+  background: #08080B;
+}
+#slide-menu h1{
+  color: #4a4e61;
+  background: #131419;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+  transition: background 0.3s ease-in-out;
+  width: 250px;
+  height: 40px;
+  left: 40px;
+}
+#slide-menu h1:hover {
+  background: hsl(250, 10%, 5%);
+
+}
+#slide-menu h1:active{
+
+}
