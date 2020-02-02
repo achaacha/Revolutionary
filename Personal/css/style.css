@@ -15,7 +15,11 @@ body{
 }
 
 .all-content{
-  z-index: 5;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
 }
 
 #myVideo {
@@ -29,6 +33,12 @@ body{
 /*Wraps*/
 
 
+#socialwrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+}
 
 /*Widget Wrap Disabled*/
 #widget-wrap{

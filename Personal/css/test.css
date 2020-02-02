@@ -1,0 +1,93 @@
+.user-panel{
+  top: 0;
+  left: 0;
+  height: 95%;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+}
+
+#userinfo{
+  position: relative;
+  top: 50px;
+  left: 15%;
+  height: 800px;
+  width: 325px;
+  background: linear-gradient(#ff9e9e 40%, 70%, #ff7575);
+  box-shadow: -0.25rem -0.25rem 0.5rem rgba(117,255,255, 0.07),
+  0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.12),
+  -0.75rem -0.75rem 1.75rem rgba(117,255,255, 0.07),
+  0.75rem 0.75rem 1.75rem rgba(0, 0, 0, 0.12),
+  inset 8rem 8rem 8rem rgba(0, 0, 0, 0.05), inset -8rem -8rem 8rem rgba(117,255,255, 0.05);
+  border-radius: 3em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  float: left;
+}
+
+#displaytabs{
+  position: absolute;
+  height: 470px;
+  width: 750px;
+  left: 120%;
+  /*width: 50%;*/
+  background-color: rgba(0,0,0,0);
+  float: right;
+}
+
+.tab, .tab2 {
+  position: relative;
+  display: block;
+  margin-top: 60px;
+  margin-left: 30px;
+  height: 75px;
+  width: 75px;
+  background: linear-gradient(#ff9e9e 40%, 70%, #ff7575);
+  box-shadow: -0.25rem -0.25rem 0.5rem rgba(117,255,255, 0.07),
+  0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.12),
+  -0.75rem -0.75rem 1.75rem rgba(117,255,255, 0.07),
+  0.75rem 0.75rem 1.75rem rgba(0, 0, 0, 0.12),
+  inset 8rem 8rem 8rem rgba(0, 0, 0, 0.05), inset -8rem -8rem 8rem rgba(117,255,255, 0.05);
+  border-radius: 15px;
+  border: 2px outset rgba(255, 255, 255, 0.3);
+  float: left;
+}
+
+.tab{
+  animation-name: floating;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes floating {
+	0% {
+		transform: rotate(-2deg) translateY(0%);
+	}
+	50% {
+		transform: rotate(2deg) translateY(3%);
+	}
+	100% {
+		transform: rotate(-2deg) translateY(0%);
+	}
+}
+
+.tab2{
+  animation-name: floating2;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes floating2 {
+	0% {
+		transform: rotate(2deg) translateY(0%);
+	}
+	50% {
+		transform: rotate(-2deg) translateY(3%);
+	}
+	100% {
+		transform: rotate(2deg) translateY(0%);
+	}
+}
+
+.tab img, .tab2 img{
+  z-index:3;
+  width: 115%;
+}
