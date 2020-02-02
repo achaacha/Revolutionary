@@ -13,7 +13,6 @@ clockMAIN.onmousedown = function(event) {
 
  clockMAIN.style.position = 'absolute';
  clockMAIN.style.zIndex = 1000;
- document.body.append(clockMAIN);
 
  moveAt(event.pageX, event.pageY);
 
