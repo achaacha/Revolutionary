@@ -28,4 +28,4 @@ UI Ideas:
 
 
 Problems:
-Clock since updated to animation due to restrictions day, morn, night time functionality does not work.
+Developing work around for clock making use of keyframes (CSS) based on millisecond. Clock works fine, but having problems with animation shifts based on time of day.
