@@ -8,6 +8,7 @@ Just a WIP google chrome extension that redesigns your new tab page!
 - Customize and Control in Google Chrome > More Tools > Extensions
 - Enable Developer at the top of the page
 - Click Load Unpacked
-- Click new tab! :D
+- Add the file
+- Enjoy! :D
 
 This is the simple design of the extension. Please look forward to the official release in the chrome extension store!
